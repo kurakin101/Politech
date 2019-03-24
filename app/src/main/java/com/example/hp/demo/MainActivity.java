@@ -13,10 +13,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.hp.demo.model.ProfTest;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import static com.example.hp.demo.model.ProfTest.architecter;
+import static com.example.hp.demo.model.ProfTest.biologiest;
+import static com.example.hp.demo.model.ProfTest.chemistriest;
+import static com.example.hp.demo.model.ProfTest.designer;
+import static com.example.hp.demo.model.ProfTest.phuisics;
+import static com.example.hp.demo.model.ProfTest.programmer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,15 +45,50 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         setAuthListener();
         setAuthInstance();
         //setUsersDatabase();
-        lfunda=(LinearLayout)findViewById(R.id.fundamentals);
-        os=(LinearLayout)findViewById(R.id.operating);
-        hw=(LinearLayout)findViewById(R.id.hardware);
-        finale=(LinearLayout)findViewById(R.id.finale);
-        sc=(LinearLayout)findViewById(R.id.score);
+        lfunda = (LinearLayout) findViewById(R.id.fundamentals);
+        os = (LinearLayout) findViewById(R.id.operating);
+        hw = (LinearLayout) findViewById(R.id.hardware);
+        finale = (LinearLayout) findViewById(R.id.finale);
+        sc = (LinearLayout) findViewById(R.id.score);
+
+
+        if (programmer >= phuisics | programmer >= biologiest | programmer >= chemistriest | programmer >= designer |
+                programmer >= architecter) {
+            ProfTest.profStatus += "Прораммист";
+            Intent i = new Intent(getApplicationContext(), Activity_Levels1.class);
+            i.putExtra("table_name", "questCompFunda");
+
+            startActivity(i);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        } else if (phuisics >= programmer | phuisics >= biologiest | phuisics >= chemistriest | phuisics >= designer |
+                phuisics >= architecter) {
+            ProfTest.profStatus += "Физик";
+            Intent i = new Intent(getApplicationContext(), Activity_Levels2.class);
+            i.putExtra("table_name", "questOS");
+            startActivity(i);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        } else if (biologiest >= phuisics | biologiest >= programmer | biologiest >= chemistriest | biologiest >= designer |
+                biologiest >= architecter) {
+            ProfTest.profStatus += "Биолог";
+            Intent i = new Intent(getApplicationContext(), Activity_Levels3.class);
+            i.putExtra("table_name", "questHardware");
+            startActivity(i);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        } else if (architecter >= phuisics | architecter >= programmer | architecter >= chemistriest | architecter >= designer |
+                architecter >= biologiest) {
+            ProfTest.profStatus += "Архитектор";
+            Intent i = new Intent(getApplicationContext(), Info.class);
+            i.putExtra("table_name", "questFinal");
+            startActivity(i);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        } else {
+
+    }
+
+
         lfunda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

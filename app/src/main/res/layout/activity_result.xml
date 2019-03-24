@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Твой результат"
                 android:id="@+id/txtCorrectAns" />
 
         </RelativeLayout>
@@ -93,8 +93,11 @@
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_circle" />
 
+
+
+
                 <TextView
-                    android:text="TextView"
+                    android:text="Очки"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imageView"
