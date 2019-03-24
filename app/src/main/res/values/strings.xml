@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Comp Quiz</string>
+
+    <string name="finish_quiz">Finish</string>
+    <string name="edit_text_question1_hint">Year</string>
+
+    <!-- Quiz questions -->
+    <string name="question_1">Q1. What your name?</string>
+    <string name="question_2">Q2. Вам сложно представить себя другим людям?</string>
+    <string name="question_3">Q3. Вы очень часто так погружаетесь в свои мысли, что не замечаете или забываете об окружающих вас людях?</string>
+    <string name="question_4">Q4. Вы стараетесь, по возможности, сразу же ответить на все электронные письма и не можете выдержать беспорядок в папке “Входящие”?</string>
+    <string name="question_5">Q5. Вам легко оставаться уравновешенным и сконцентрированным даже в напряженной обстановке?</string>
+    <string name="question_6">Q6. Вы, как правило, не начинаете разговор?</string>
+    <string name="question_7">Q7. Вы редко делаете что-то из чистого любопытства?</string>
+    <string name="question_8">Q8. Вам кажется, что вы в чем-то превосходите других людей?</string>
+    <string name="question_9">Q9. Быть организованным для вас более важно, чем уметь приспособиться?</string>
+    <string name="question_10">Q10. Вы очень целеустремленный и энергичный человек?</string>
+
+    <!-- Question 1 choices
+    <string name="question_1_choiceA">2003</string>
+    <string name="question_1_choiceB">2008</string>
+    <string name="question_1_choiceC">2001</string>
+    <string name="question_1_choiceD">2005</string> -->
+
+    <!-- Question 2 choices -->
+    <string name="question_2_choiceA">Android Operating System Project</string>
+    <string name="question_2_choiceB">Android Open Source Project</string>
+    <string name="question_2_choiceC">Android Open Stack Programming</string>
+    <string name="question_2_choiceD">Android Open Source Protocol</string>
+
+    <!-- Question 3 choices -->
+    <string name="question_3_choiceA">Apple</string>
+    <string name="question_3_choiceB">Google</string>
+    <string name="question_3_choiceC">Android Inc.</string>
+    <string name="question_3_choiceD">Nokia</string>
+
+    <!-- Question 4 choices -->
+    <string name="question_4_choiceA">Apple</string>
+    <string name="question_4_choiceB">No company</string>
+    <string name="question_4_choiceC">Nokia</string>
+    <string name="question_4_choiceD">Google</string>
+
+    <!-- Question 5 choices -->
+    <string name="question_5_choiceA">C</string>
+    <string name="question_5_choiceB">C++</string>
+    <string name="question_5_choiceC">Python</string>
+    <string name="question_5_choiceD">Java</string>
+
+    <!-- Question 6 choices -->
+    <string name="question_6_choiceA">Nothing</string>
+    <string name="question_6_choiceB">The android version number</string>
+    <string name="question_6_choiceC">The release date</string>
+    <string name="question_6_choiceD">The build number</string>
+
+    <!-- Question 7 choices -->
+    <string name="question_7_choiceA">Eclipse</string>
+    <string name="question_7_choiceB">Java</string>
+    <string name="question_7_choiceC">XML</string>
+    <string name="question_7_choiceD">SQL</string>
+
+    <!-- Question 8 choices -->
+    <string name="question_8_choiceA">Android Debug Bridge</string>
+    <string name="question_8_choiceB">Application Debug Bridge</string>
+    <string name="question_8_choiceC">Android Data Bridge</string>
+    <string name="question_8_choiceD">Application Data Bridge</string>
+
+    <!-- Question 9 choices -->
+    <string name="question_9_choiceA">res/</string>
+    <string name="question_9_choiceB">assets/</string>
+    <string name="question_9_choiceC">src/</string>
+    <string name="question_9_choiceD">bin/</string>
+
+    <!-- Question 10 choices -->
+    <string name="question_10_choiceA">Yes</string>
+    <string name="question_10_choiceB">No</string>
+    <string name="is_accessed">is_accessed</string>
+
+</resources>

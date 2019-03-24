@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "295987752874",
+    "firebase_url": "https://polytechhackaton.firebaseio.com",
+    "project_id": "polytechhackaton",
+    "storage_bucket": "polytechhackaton.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295987752874:android:809b0659eaa5ad00",
+        "android_client_info": {
+          "package_name": "com.example.hp.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295987752874-v3qecc9t28prj1k2pifuhl3kd8bjd4t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1UjJNvsW2t7g_UahnKNIpKoXB6jONMQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295987752874:android:0430e64385221242",
+        "android_client_info": {
+          "package_name": "com.skooltchdev.multiplechoicequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295987752874-v3qecc9t28prj1k2pifuhl3kd8bjd4t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1UjJNvsW2t7g_UahnKNIpKoXB6jONMQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
