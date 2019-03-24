@@ -34,15 +34,15 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/circle_background_purple"
+                        android:background="@drawable/chem"
                         android:padding="10dp"
-                        android:src="@drawable/ic_computer" />
+                     />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Fundamentals"
+                        android:text="Химия"
                         android:textStyle="bold" />
 
                     <View
@@ -67,15 +67,15 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circle_background_pink"
+                    android:background="@drawable/it"
                     android:padding="10dp"
-                    android:src="@drawable/ic_software" />
+                  />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Operating System"
+                    android:text="IT"
                     android:textStyle="bold" />
 
                 <View
@@ -107,15 +107,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circle_background_yellow"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_harddisk" />
+                    android:background="@drawable/math"
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Hardware"
+                    android:text="Математика"
                     android:textStyle="bold" />
 
                 <View
@@ -140,15 +139,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circle_background_blue"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_test" />
+                    android:background="@drawable/phis"
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="FINALE"
+                    android:text="Физика"
                     android:textStyle="bold" />
 
                 <View
@@ -190,7 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Score"
+                    android:text="Очки"
                     android:textStyle="bold" />
 
                 <View
