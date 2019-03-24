@@ -10,8 +10,11 @@ public class ProfTest {
 
     public static int chemistriest = 0;
 
-    public static int aechitecter = 0;
+    public static int architecter = 0;
 
     public static int designer = 0;
 
+    public static String profStatus = "";
+
 }
+

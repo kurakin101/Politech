@@ -10,7 +10,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.hp.demo.model.ProfTest;
+
 import java.util.ArrayList;
+
 
 public class ProfActivity extends AppCompatActivity {
     private EditText question1_answer;
@@ -51,7 +54,6 @@ public class ProfActivity extends AppCompatActivity {
         editTextResults = new ArrayList<>();
         checkBoxResults = new boolean[]{false, false, false, false};
 
-        question1_answer = (EditText) findViewById(R.id.question_1_edit_text);
         radio_group_question2 = (RadioGroup) findViewById(R.id.radio_group_question2);
         radio_group_question3 = (RadioGroup) findViewById(R.id.radio_group_question3);
         radio_group_question4 = (RadioGroup) findViewById(R.id.radio_group_question4);
@@ -60,11 +62,6 @@ public class ProfActivity extends AppCompatActivity {
         radio_group_question8 = (RadioGroup) findViewById(R.id.radio_group_question8);
         radio_group_question9 = (RadioGroup) findViewById(R.id.radio_group_question9);
         radio_group_question10 = (RadioGroup) findViewById(R.id.radio_group_question10);
-
-        /*question7_A = (CheckBox) findViewById(R.id.question_7_choiceA);
-        question7_B = (CheckBox) findViewById(R.id.question_7_choiceB);
-        question7_C = (CheckBox) findViewById(R.id.question_7_choiceC);
-        question7_D = (CheckBox) findViewById(R.id.question_7_choiceD);*/
 
     }
 
@@ -90,17 +87,17 @@ public class ProfActivity extends AppCompatActivity {
         radioButton4 = (RadioButton) findViewById(R.id.question_2_choiceD);
         radioButton5 = (RadioButton) findViewById(R.id.question_2_choiceE);
         if (radioButton1.isChecked()) {
-
+            ProfTest.programmer +=1;
         }else if (radioButton2.isChecked()){
-
+            ProfTest.programmer +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.biologiest +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.designer +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+
         }
 
     }
@@ -114,15 +111,15 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.architecter +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.chemistriest +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.programmer +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.designer +=1;
         }
 
     }
@@ -136,15 +133,15 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.chemistriest +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.architecter +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.programmer +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.designer +=1;
         }
     }
 
@@ -157,15 +154,15 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.chemistriest +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.programmer +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.designer +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.architecter +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.phuisics +=1;
         }
 
     }
@@ -179,15 +176,15 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.designer +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.biologiest +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.programmer +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.chemistriest +=1;
         }
 
     }
@@ -201,15 +198,15 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.chemistriest +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.biologiest +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.biologiest +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.architecter +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.phuisics +=1;
         }
 
     }
@@ -221,17 +218,17 @@ public class ProfActivity extends AppCompatActivity {
         radioButton4 = (RadioButton) findViewById(R.id.question_2_choiceD);
         radioButton5 = (RadioButton) findViewById(R.id.question_2_choiceE);
         if (radioButton1.isChecked()) {
-
+            ProfTest.architecter +=1;
         }else if (radioButton2.isChecked()){
-
+            ProfTest.architecter +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.phuisics +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.biologiest +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.chemistriest +=1;
         }
 
     }
@@ -245,17 +242,19 @@ public class ProfActivity extends AppCompatActivity {
         if (radioButton1.isChecked()) {
 
         }else if (radioButton2.isChecked()){
-
+            ProfTest.architecter +=1;
         }else if (radioButton3.isChecked()){
-
+            ProfTest.designer +=1;
         }else if (radioButton4.isChecked()){
-
+            ProfTest.architecter +=1;
         }else if (radioButton5.isChecked()){
-
+            ProfTest.programmer +=1;
         }else {
-            //Toast.makeText(this, "Incorrect Answer " + "\n" + "Correct Answer is : Rajasthan", Toast.LENGTH_SHORT).show();
+            ProfTest.designer +=1;
         }
 
     }
 
 }
+
+

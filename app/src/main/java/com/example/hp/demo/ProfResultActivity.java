@@ -7,6 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.hp.demo.model.ProfTest;
+
+import static com.example.hp.demo.model.ProfTest.architecter;
+import static com.example.hp.demo.model.ProfTest.biologiest;
+import static com.example.hp.demo.model.ProfTest.chemistriest;
+import static com.example.hp.demo.model.ProfTest.designer;
 import static com.example.hp.demo.model.ProfTest.phuisics;
 import static com.example.hp.demo.model.ProfTest.programmer;
 
@@ -30,15 +36,35 @@ public class ProfResultActivity extends AppCompatActivity {
             }
         });
 
-        if (programmer == 1){
+        if (programmer >= phuisics | programmer >= biologiest | programmer >= chemistriest | programmer >= designer |
+                programmer >= architecter){
             professionResult.setText("Прораммист");
-        }else if (programmer == 2){
-            professionResult.setText("Прораммист");
-        }else if (programmer == 3 | phuisics == 1){
-            professionResult.setText("Инженер");
+            ProfTest.profStatus += "Прораммист";
+        }else if (phuisics >= programmer | phuisics >= biologiest | phuisics >= chemistriest | phuisics >= designer |
+                phuisics >= architecter){
+            professionResult.setText("Физик");
+            ProfTest.profStatus += "Физик";
+        }else if (biologiest >= phuisics | biologiest >= programmer | biologiest >= chemistriest | biologiest >= designer |
+                biologiest >= architecter){
+            professionResult.setText("Биолог");
+            ProfTest.profStatus += "Биолог";
+        }else if (architecter >= phuisics | architecter >= programmer | architecter >= chemistriest | architecter >= designer |
+                architecter >= biologiest){
+            professionResult.setText("Архитектор");
+            ProfTest.profStatus += "Архитектор";
+        }else if (designer >= phuisics | designer >= programmer | designer >= chemistriest | designer >= biologiest |
+                designer >= architecter){
+            professionResult.setText("Дизайнер");
+            ProfTest.profStatus += "Дизайнер";
+        }else if (chemistriest >= phuisics | chemistriest >= programmer | chemistriest >= biologiest | chemistriest >= designer |
+                chemistriest >= architecter){
+            professionResult.setText("Химик");
+            ProfTest.profStatus += "Химик";
         }else {
 
         }
 
     }
 }
+
+
